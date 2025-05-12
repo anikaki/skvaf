@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Inventory</title>
+    <link rel="stylesheet" href="resources/sheet.css">
+    <style>
+        .search-bar {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .waffle {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .waffle th, .waffle td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            font-size: 10pt;
+        }
+        .waffle th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function filterTable() {
+            const input = document.getElementById("searchInput").value.toLowerCase();
+            const rows = document.querySelectorAll(".waffle tbody tr");
+            
+            rows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(input) ? "" : "none";
+            });
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="searchInput" class="search-bar" placeholder="Search table..." onkeyup="filterTable()">
+
+    <table class="waffle">
+        <thead>
+            <tr>
+                <th>INVENTORY NUMBER</th>
+                <th>TITLE</th>
+                <th>DESCRIPTION</th>
+                <th>YEAR</th>
+                <th>DURATION</th>
+                <th>COLOR / B&W</th>
+                <th>AUDIO</th>
+                <th>LINK TO VIDEO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2</td>
+                <td>Al Robbins &amp; Shigeko - 10 bit</td>
+                <td>The video show scenes of several people gathered around a table, including George Maciunas and possibly Robert Watts, it is unclear who the other people shown are. Some of the topics discussed are mortgages and later, several people are seen signing papers. The dialogue cuts out eventually. Shigeko Kubota and Al Robbins are discussing a past summer.</td>
+                <td></td>
+                <td>33 minutes</td>
+                <td>Black and White</td>
+                <td>Sound</td>
+                <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSe9gJAH1j1_3GePA-INhRAZLnaoupiUmLpO68UCP2O0q_Z3cw/viewform?usp=header" target="_blank">VIEW</a></td>
+            </tr>
+        
+            <tr>
+                 <td>19</td>
+                <td>Duchamps Grave Site UnEdited BW </td>
+                <td>Footage of Duchamp’s gravestone from Shigeko’s trip to Europe in 1972. Audio of Shigeko reading the gravestone. Footage is black and white. </td>
+                <td>1972</td>
+                <td>2 minutes</td>
+                <td>Black and White</td>
+                <td>Sound</td>
+                <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSeggoHjQ6s3e72lqrzDe-Gjf9qzWoWHD5JEms8Lf3EgcOOcYw/viewform?usp=header" target="_blank">VIEW</a></td>
+            </tr>
+
+            <tr>
+                <td>24</td>
+                <td>Father_last </td>
+                <td>Footage of Shigeko’s father in bed. Audio of Shigeko’s voice at the beginning. The camera pans back and forth between Shigeko’s father and the television screen that Shigeko and her father are watching. The people on the television are singing. Footage is black and white.  </td>
+                <td></td>
+                <td>14 minutes</td>
+                <td>Color</td>
+                <td>Sound</td>
+                <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSeu3frYxnaFUKHx76jz0Hw3l6HuSH2U0r4rLibGUEAoJyZRkw/viewform" target="_blank">VIEW</a></td>
+            </tr>
+            
+            <tr>
+                <td>93</td>
+                <td>Tape-1_1970-ABC-News</td>
+                <td>The first half is a recording of a newscast featuring Nam June Paik and some of his work. The second half is footage that Shigeko recorded during a trip to Paris. There is a news story about video tape featuring Nam June Paik and his cello, television and video synthesizer. Nam June Paik and Charlotte Moorman are being interviewed. </td>
+                <td>1970</td>
+                <td>33 minutes</td>
+                <td>Black and White</td>
+                <td>Sound</td>
+                <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSdMupqbeTPsjogLezXq0TUbkB9yeFt6Ck6cFOtKFK7hX-7QEw/viewform?usp=header" target="_blank">VIEW</a></td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>Shigeko in Berlin 02121981</td>
+                <td>The footage takes part in Berlin. Shigeko and her translator talk about the history of the city and interview people. Shigeko stands in front of the old Japanese Embassy, speaking into a microphone about her experiences during WWII and the building's history. Footage of Three Mountains is shown. She later appears outside the DAAD building, reflecting on receiving her first international grant. Scenes include driving past the Berlin Wall, Shigeko discussing it, interviewing people at a business, a train station, and an animal trainer with animals. She also interviews a man in a park. Shigeko and Nam June are seen outside her Berlin apartment, where he does stretches, followed by Shigeko walking through a park. </td>
+                <td>1981</td>
+                <td>15 minutes</td>
+                <td>Black and White</td>
+                <td>Sound</td>
+                <td><a href="https://docs.google.com/forms/d/e/1FAIpQLScw8gJevRUlJB-1xUl_sUjHaJqNTOZ5V3iZjxpD5m_huf8S6g/viewform?usp=header" target="_blank">VIEW</a></td>
+            </tr>
+            
+            <tr>
+                <td>112</td>
+                <td>Shigekos_Diary_June_1979</td>
+                <td>Footage of Shigeko playing the piano.</td>
+                <td>1979</td>
+                <td>7 minutes</td>
+                <td>Black and White</td>
+                <td>Sound</td>
+                <td><a href="https://docs.google.com/forms/d/e/1FAIpQLSf1MQa76mLEFFL7JtuUbjRVfag_iBql9dZ9Z3L6KvWQfpriGQ/viewform?usp=header" target="_blank">VIEW</a></td>
+            </tr>
+
+
+            
+           
+        
+        </tbody>
+    </table>
+</body>
+</html>
